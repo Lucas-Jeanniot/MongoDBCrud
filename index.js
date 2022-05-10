@@ -1,7 +1,7 @@
 const {MongoClient} = require('mongodb');
 
 async function main(){
-    const uri = "mongodb+srv://thressian:4G44TaEgoHEKHgFC@cluster0.xtd64.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+ 
     const client = new MongoClient(uri);
     try{
         await client.connect(); //await waits for the connection to succeed before continuing
